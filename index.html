@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2a44">
+<meta name="robots" content="noindex">
+<title>Formularios Conductores · On Street</title>
+<style>
+  :root{
+    --bg:#f3f5f8; --card:#ffffff; --ink:#14202e; --muted:#5b6878;
+    --brand:#0f2a44; --accent:#f5a623; --line:#e3e8ef;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg)}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); line-height:1.4; -webkit-font-smoothing:antialiased;
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  header{
+    background:var(--brand); color:#fff;
+    padding:calc(28px + env(safe-area-inset-top)) 20px 26px;
+  }
+  .wrap{max-width:520px;margin:0 auto}
+  .brand{font-size:26px;font-weight:800;letter-spacing:-.5px}
+  .brand span{color:var(--accent)}
+  .tag{font-size:13px;opacity:.75;margin-top:2px}
+  h1{font-size:17px;font-weight:600;margin-top:18px;opacity:.95}
+  main{padding:8px 16px 32px}
+  h2{
+    font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted);margin:24px 4px 10px;
+  }
+  .list{display:flex;flex-direction:column;gap:10px}
+  a.btn{
+    display:flex;align-items:center;gap:14px;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:16px 16px;min-height:64px;
+    text-decoration:none;color:var(--ink);
+    box-shadow:0 1px 2px rgba(15,42,68,.05);
+    transition:transform .08s ease, box-shadow .15s ease, border-color .15s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  a.btn:active{transform:scale(.985);border-color:var(--accent)}
+  a.btn:hover{box-shadow:0 4px 14px rgba(15,42,68,.10)}
+  a.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .ico{
+    flex:0 0 40px;height:40px;border-radius:10px;
+    display:grid;place-items:center;background:#eef2f7;color:var(--brand);
+  }
+  .ico svg{width:22px;height:22px}
+  .txt{flex:1;min-width:0}
+  .t{font-size:16.5px;font-weight:650}
+  .s{font-size:13px;color:var(--muted);margin-top:1px}
+  .arrow{color:#a6b0bd;flex:0 0 auto}
+  .start .ico{background:#e7f6ec;color:#1f8a46}
+  .end .ico{background:#fdecec;color:#c23b3b}
+  footer{text-align:center;font-size:12px;color:var(--muted);padding:8px 16px 28px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">On Street<span>.</span></div>
+    <div class="tag">Tú nos mueves</div>
+    <h1>Formularios para conductores</h1>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>Ruta diaria</h2>
+  <div class="list">
+    <a class="btn start" href="https://forms.monday.com/forms/b54417f7a9f46520f55b43f6db39ea3a?r=use1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="7 4 20 12 7 20 7 4"/></svg></span>
+      <span class="txt"><span class="t">Inicio de ruta</span></span>
+      <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn end" href="https://forms.monday.com/forms/c8d554b96983a241a5c6a9b6b8bbc938?r=use1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></span>
+      <span class="txt"><span class="t">Término de ruta</span></span>
+      <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn end" href="https://forms.monday.com/forms/dcf67adce4f9fbcb906f75b47d993022?r=use1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></span>
+      <span class="txt"><span class="t">Término de ruta</span><span class="s">Caja La Araucana</span></span>
+      <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn" href="https://resumen-ruta-conductores.vercel.app/?modo=conductor">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 15v-4M12 15V8M16 15v-6"/></svg></span>
+      <span class="txt"><span class="t">Resumen de ruta</span></span>
+      <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <h2>Mensual</h2>
+  <div class="list">
+    <a class="btn" href="https://forms.monday.com/forms/c12043a8b73c8a1f8d9b5b69cd9e87ce?r=use1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+      <span class="txt"><span class="t">Inicio de mes</span></span>
+      <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="btn" href="https://forms.monday.com/forms/b04d3dda9b16c2964407f4018c851ff6?r=use1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2.5 2.5L16 9"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg></span>
+      <span class="txt"><span class="t">Checklist fin de mes</span></span>
+      <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <h2>Otros</h2>
+  <div class="list">
+    <a class="btn" href="https://forms.monday.com/forms/8717e44757115cfa22b000229e874ee8?r=use1">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></span>
+      <span class="txt"><span class="t">Traspaso de oficinas móviles</span></span>
+      <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</main>
+
+<footer>On Street S.A.</footer>
+</body>
+</html>
